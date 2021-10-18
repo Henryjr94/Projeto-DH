@@ -1,6 +1,6 @@
 html, body{
-    background: rgb(119,119,119);
-    background: linear-gradient(45deg, rgba(119,119,119,1) 0%, rgba(60,60,60,1) 100%);
+    background: rgb(78,226,215);
+    background: linear-gradient(45deg, rgba(78,226,215,1) 0%, rgba(64,109,144,1) 100%);
     padding: 0;
     margin: 0;
     user-select: none; 
@@ -55,13 +55,10 @@ address,caption,cite,code,dfn,em,strong,th,var {
         font-size: 20px;
         color: seashell;
     }
-    
-    .balance{
-        border: solid rgb(89, 139, 111);
-    }
-    
-    .appoint{
-        border: solid rgb(142, 145, 100);
+
+    .login{
+        border: solid rgb(199, 209, 62);
+        border-radius: 10px;
     }
 
 }
@@ -106,7 +103,7 @@ address,caption,cite,code,dfn,em,strong,th,var {
     .title{
         font-weight: unset;
         font-family: 'Bebas Neue', cursive;        
-        color: rgb(146, 148, 115);
+        color: rgb(201, 211, 60);
         font-weight: bold;        
         text-shadow: black 5px 5px 7px;
     }
@@ -175,9 +172,10 @@ address,caption,cite,code,dfn,em,strong,th,var {
         height: 40px; width: 200px;
         margin: 5px;
         font-family: 'Bebas Neue', cursive;
-        font-size: 20px;
+        font-size: 25px;
         color: seashell;
-        border: solid rgb(142, 145, 100);
+        border: solid rgb(199, 209, 62);
+        border-radius: 10px;
         margin-left: 50px;
         margin-top: auto;
         margin-bottom: 0;
@@ -233,7 +231,7 @@ address,caption,cite,code,dfn,em,strong,th,var {
     }
     
     .feat{
-        background-color: rgb(121, 121, 121);
+        background-color: rgba(117, 147, 172, 0.753);
         width: 200px; height: 90%;
         display: grid;
     }
@@ -251,7 +249,7 @@ address,caption,cite,code,dfn,em,strong,th,var {
     }
     
     .feat img{
-        width: 100px;height: auto;
+        width: auto;height: 200px;
         object-fit: scale-down;
         margin-top: 10px;
         margin-left: auto;
@@ -265,18 +263,37 @@ address,caption,cite,code,dfn,em,strong,th,var {
     
     .feat-title{
         font-family: 'Bebas Neue', cursive; 
-        font-size: 30px; 
+        color: whitesmoke;
+        font-size: 25px; 
     }
     
-    .feat-desc, .feat-more{
+    .feat-desc, .feat-more{        
         font-family: 'Ubuntu', sans-serif;
     }
     
-    .feat-more a{
-        color: rgb(78, 53, 21);
-        text-decoration: none;
+}
+
+/* footer */
+@media screen {
+    footer{
+        position: relative;
+        height: 100px; width: 100%;
+        background-color: rgba(245, 245, 245, 0.308);
+        display: flex;
     }
-    
+
+    .socials{
+        
+        height: 90%; width: 400px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 5px;
+        
+    }
+
+    .socials img{
+        height: 100%;        
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -317,20 +334,22 @@ address,caption,cite,code,dfn,em,strong,th,var {
 
     .feat-text{
         visibility: hidden;
+        top: -300px;
         width: 0; height: 0;
-        position: absolute;
+        position:relative;
     }
 
     .feat-box{        
         margin: 0;
     }
 
-    html, body{
-        height: 1700px;
-    }
 }
 
 @media screen and (max-width: 900px){
+    main{
+        height: 1700px;
+    }
+
     .feat-box{
         display: grid;
         grid-template-columns: 0fr 1fr;
@@ -344,20 +363,31 @@ address,caption,cite,code,dfn,em,strong,th,var {
         margin-left: 0;
     }
 
-    html{
-        height: 1800px;
-    }
-
-    .intro-box{
+    .intro-box{        
         position: relative;
         width: 80%;height: 50%;
         left: 5%;
         top: -500px;
     }
 
+    .info.text{
+        /* visibility: hidden; */
+        font-size: 15px;
+    }
+
+    .info.title{
+        font-size: 35px;
+        line-height: normal;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
+
+    main{
+        height: 2200px;
+    }
+
     .feat-box{
         display: grid;
         grid-template-columns: 1fr;
@@ -386,4 +416,14 @@ address,caption,cite,code,dfn,em,strong,th,var {
     html{
         height: 2200px;
     }
+
+    .info-box{        
+        display: grid;
+        height: 550px;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    
 }
