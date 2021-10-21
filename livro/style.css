@@ -73,38 +73,31 @@ html, body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         width: 30%;
     }
 
-    .book-owner h3{
-        position: relative;
-        bottom: 100px;
+    .book-owner table{
+        margin-top: 50px;
     }
 
     .book-desire{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         width: 30%;
     }
 
-    .book-desire h3{
-        position: relative;
-        bottom: 100px;
-        margin-top: 70px;
+    .book-desire table{
+        margin-top: 50px;
     }
 
     .book-information{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         margin-left: 10%;
         width: 20%;
     }
-
 
     .book-information img{
         max-width: 100%;
