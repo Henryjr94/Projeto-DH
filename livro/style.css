@@ -79,7 +79,7 @@ html, body{
     }
 
     .book-owner table{
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
     .book-desire{
@@ -90,7 +90,7 @@ html, body{
     }
 
     .book-desire table{
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
     .book-information{
@@ -106,6 +106,10 @@ html, body{
         max-height: 60vh;
         box-shadow: 0px 0px 80px 2px rgb(178, 113, 240);
 
+    }
+
+    .book-box h3{
+        font-size: 50px;
     }
 }
 
