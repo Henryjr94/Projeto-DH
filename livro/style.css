@@ -70,6 +70,10 @@ html, body{
         justify-content: space-around;
     }
 
+    .book-box h3{
+        font-size: 50px;
+    }
+
     .book-owner{
         display: flex;
         flex-direction: column;
@@ -82,6 +86,10 @@ html, body{
         margin-top: 10px;
     }
 
+    .book-owner img {
+        width: 40px;
+    }
+
     .book-desire{
         display: flex;
         flex-direction: column;
@@ -91,6 +99,12 @@ html, body{
 
     .book-desire table{
         margin-top: 10px;
+    }
+
+    
+
+    .book-desire img{
+        width: 40px;
     }
 
     .book-information{
@@ -106,10 +120,6 @@ html, body{
         max-height: 60vh;
         box-shadow: 0px 0px 80px 2px rgb(178, 113, 240);
 
-    }
-
-    .book-box h3{
-        font-size: 50px;
     }
 }
 
