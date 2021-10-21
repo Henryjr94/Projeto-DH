@@ -228,6 +228,7 @@ html, body{
         height: 100px; width: 100%;
         background-color: rgba(245, 245, 245, 0.308);
         display: flex;
+        justify-content: center;
     }
 
     .socials{
@@ -289,7 +290,7 @@ html, body{
     }
 
     main{
-        height: 2200px;
+        height: 3200px;
     }
 
     .book-box{
@@ -319,7 +320,7 @@ html, body{
     }
 
     html{
-        height: 2200px;
+        height: 3200px;
     }
 
 }
