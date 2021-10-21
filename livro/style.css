@@ -73,25 +73,38 @@ html, body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         width: 30%;
     }
+
+    .book-owner h3{
+        position: relative;
+        bottom: 100px;
+    }
+
     .book-desire{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         width: 30%;
+    }
+
+    .book-desire h3{
+        position: relative;
+        bottom: 100px;
+        margin-top: 70px;
     }
 
     .book-information{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         margin-left: 10%;
         width: 20%;
     }
+
 
     .book-information img{
         max-width: 100%;
