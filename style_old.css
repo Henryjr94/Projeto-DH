@@ -1,0 +1,428 @@
+html, body{
+    background: rgb(78,226,215);
+    background: linear-gradient(45deg, rgba(78,226,215,1) 0%, rgba(64,109,144,1) 100%);
+    padding: 0;
+    margin: 0;
+    user-select: none; 
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style: unset;
+    font-weight: unset;
+}
+
+/* header */
+@media screen {
+    header{
+        width: 100%; height: 80px;
+        display: flex;
+    }
+    header img{
+        margin: 5px;
+        margin-left: 15px;
+    }
+    header ul{
+        margin: 0; padding: 0;
+        margin-left: 100px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    header li{
+        display: inline-block;
+        margin-left: 50px;
+    }
+    
+    header a{
+        font-size: 25px;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        color: white;    
+    }
+    
+    .buttons{
+        margin-right: 10px;
+        margin-left: auto;
+        align-self: center;
+    }
+    
+    .buttons button{
+        background: transparent;
+        height: 40px;
+        margin: 5px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+        color: seashell;
+    }
+
+    .login{
+        border: solid rgb(199, 209, 62);
+        border-radius: 10px;
+    }
+
+}
+
+/* intro + font setup */
+@media screen {
+
+    .intro-main{
+        position: relative;
+        width: 100%; height: 500px;
+        /* background-color: chartreuse; */
+    }
+
+    .intro-main img{
+        width: 100%; height: 100%;
+        object-fit:cover
+    }
+
+    .intro-box{
+        position: relative;
+        width: 500px;height: 50%;
+        left: 5%;
+        top: -500px;
+    }
+
+    .intro.text{
+        position: relative;
+        top: -100px
+    }
+
+    .intro-box hr{
+        position: relative;
+        top: -80px
+    }
+
+    .intro.title{
+        font-size: 75px;
+        line-height: 70px;
+
+    }
+
+    .title{
+        font-weight: unset;
+        font-family: 'Bebas Neue', cursive;        
+        color: rgb(201, 211, 60);
+        font-weight: bold;        
+        text-shadow: black 5px 5px 7px;
+    }
+
+    .title strong{
+        color: white;
+    }
+
+    .text{
+        color: whitesmoke;
+        font-family: 'Ubuntu', sans-serif;
+        text-shadow: black 2px 2px 7px, black 2px 2px 5px;
+    }
+
+    .intro.text{
+        font-size: 25px;
+    }
+    
+
+}
+
+/* info */
+@media screen {
+    .info-box{
+        position: relative;
+        width: 100%; height: 500px; max-width: 1600px;
+        margin: auto;
+        display: flex;
+    }
+    
+    .info.img{
+        width: 50%; height: auto;
+        margin: 50px 0 50px 5%;
+    }
+    
+    .info img{
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+    
+    .info-text{
+        width: 40%; height: auto;
+        margin: 50px 0 50px 0;
+        display: grid;
+    }
+    
+    .info.title{
+        font-size: 50px;
+        line-height: 55px;
+        margin-left: 50px;
+        margin-top: 0;
+    }
+    
+    .info.text{
+        position: relative;
+        top: -15px;
+        margin-left: 50px;
+        margin-top: -50px;
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .info-text button{
+        position: relative;
+        background: transparent;
+        height: 40px; width: 200px;
+        margin: 5px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 25px;
+        color: seashell;
+        border: solid rgb(199, 209, 62);
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+    
+}
+
+/* features */
+@media screen {
+
+    .feat-align{
+        width: 100%; height: 300px; max-width: 1600px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feat-text{
+        width: 100%; height: 100%;
+        margin-left: 5%;
+    }
+    
+    .feat-left.title{
+        margin: 0;
+        font-size: 50px;
+    }
+
+    .feat-left.text{
+        margin: 0;
+        font-size: 20px;
+
+    }
+
+    .info-text{
+        width: 40%; height: auto;
+        margin: 50px 0 50px 0;
+    }
+    
+    .feat.title{
+        font-size: 50px;
+        line-height: 55px;
+        margin-left: 50px;
+        margin-top: 0;
+    }
+    
+    .feat-box{
+        margin-left: auto;
+        position: relative;
+        width: 100%; height: 100%; max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .feat{
+        background-color: rgba(117, 147, 172, 0.753);
+        width: 200px; height: 90%;
+        display: grid;
+    }
+    
+    .feat.pos1{
+        margin-left: 5%;
+    }
+    
+    .feat.pos2, .feat.pos3, .feat.pos4{
+        margin-left: 25px;
+    }
+    
+    .feat.pos4{
+        margin-right: 5%;
+    }
+    
+    .feat img{
+        width: auto;height: 200px;
+        object-fit: scale-down;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .feat p{
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .feat-title{
+        font-family: 'Bebas Neue', cursive; 
+        color: whitesmoke;
+        font-size: 25px; 
+    }
+    
+    .feat-desc, .feat-more{        
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+}
+
+/* footer */
+@media screen {
+    footer{
+        position: relative;
+        height: 100px; width: 100%;
+        background-color: rgba(245, 245, 245, 0.308);
+        display: flex;
+    }
+
+    .socials{
+        
+        height: 90%; width: 400px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 5px;
+        
+    }
+
+    .socials img{
+        height: 100%;        
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header ul{
+        visibility: hidden;
+        position: absolute;
+        width: 0; height: 0;
+    }
+
+    .info-box{        
+        display: grid;
+        height: 550px;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .info.img{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 250px; width: auto;  
+    }
+
+    .info img{
+        object-fit:cover;
+    }
+
+    .info-text{
+        
+        position: relative;
+        margin: 0;
+        width: 100%; height: 250px;
+        display: grid;
+    }
+
+    .feat-text{
+        visibility: hidden;
+        top: -300px;
+        width: 0; height: 0;
+        position:relative;
+    }
+
+    .feat-box{        
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    main{
+        height: 1700px;
+    }
+
+    .feat-box{
+        display: grid;
+        grid-template-columns: 0fr 1fr;
+        height: 600px;
+        margin: 0;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .feat.pos3, .feat.pos1{
+        margin-left: 0;
+    }
+
+    .intro-box{        
+        position: relative;
+        width: 80%;height: 50%;
+        left: 5%;
+        top: -500px;
+    }
+
+    .info.text{
+        /* visibility: hidden; */
+        font-size: 15px;
+    }
+
+    .info.title{
+        font-size: 35px;
+        line-height: normal;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    main{
+        height: 2200px;
+    }
+
+    .feat-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 1000px;
+        margin: 0;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .feat.pos1, .feat.pos2, .feat.pos3, .feat.pos4{
+        position: relative;
+        height: auto;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro-box{
+        position: relative;
+        width: 80%;height: 50%;
+        left: 5%;
+        top: -500px;
+    }
+
+    html{
+        height: 2200px;
+    }
+
+    .info-box{        
+        display: grid;
+        height: 550px;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    
+}
