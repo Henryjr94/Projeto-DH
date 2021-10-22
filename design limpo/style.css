@@ -10,6 +10,8 @@
     user-select: none;
 }
 
+/* ajustar o tamanho da pagina aqui, header tem header+footer tem 20vh */
+/* body tem que ser a soma de main + header + footer */
 body{
     background: rgb(78,226,215);
     background: linear-gradient(45deg, rgba(78,226,215,1) 0%, rgba(64,109,144,1) 100%);
@@ -131,123 +133,6 @@ main{
     align-content: center;
 }
 
-/* intro-box */
-@media screen {
-    .intro-box{
-        height: 30vh;
-        display: flex;
-    }
-    
-    .intro-box img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    
-    .intro-text{
-        position: absolute;
-        height: 30vh;
-        width: 50%;
-        max-width: 700px;
-        padding: 35px;
-    }    
-}
-
-/* info-box */
-@media screen {
-    .info-box{
-        display: flex;
-        height: 60vh;
-        width: 98%;
-        max-width: 1800px;
-        padding: 5vh;
-        margin: 0 auto;
-    }
-
-    .info-img{
-        width: 40%;
-    }
-    
-    .info-img img{
-        height: 50vh;
-        width: 100%;
-        object-fit: cover;
-    }
-    
-    .info-text{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        padding: 15px 15px 0;
-    }
-    
-    .info-text button{
-        width: 250px;
-        height: 50px;
-        margin-top: auto;
-        border-radius: 25px;
-    }
-
-
-    
-}
-
-/* most-wanted */
-@media screen {
-    .feat-box{
-        display: flex;
-        flex-direction: column;
-        width: 98%;
-        max-width: 1800px;
-        margin: auto;
-        height: 38vh;
-    }
-    
-    .feat-text{
-        height: 7vh;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .most-wanted{
-        display: flex;
-        height: 31vh;
-        justify-content: space-between;
-        margin-top: 10px;    
-    }
-    
-    .most-wanted div{
-        display: flex;
-        flex-direction: column;
-        height: 31vh;
-        justify-content: center;
-    }
-    
-    .most-wanted img{
-        height: 100%;    
-        width: auto;
-        object-fit: contain;
-        box-shadow: black 10px 10px;
-        transition: 1s;
-    }    
-
-    .most-wanted img:hover{
-        box-shadow: whitesmoke 10px 10px;
-    }
-
-    .most-wanted a {
-        height: 85%;
-        display: flex;
-        align-content: center;
-        justify-content: center; 
-        width: auto;
-    }
-
-    .feat-title{
-       margin-top: 10px;
-    }    
-}
-
 /* footer */
 @media screen {
     footer{
@@ -256,6 +141,7 @@ main{
         display: flex;
         height: 10vh;
         padding: 5px;
+
     }
     
     footer .socials{
@@ -290,33 +176,3 @@ main{
     }
 }
 
-@media (max-width: 1400px) {
-    .pos8{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }    
-}
-
-@media (max-width: 1250px){
-    .pos7{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }   
-    
-    .text{
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 1050px){
-    .pos6{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }    
-}
