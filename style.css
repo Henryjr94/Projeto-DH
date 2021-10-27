@@ -149,7 +149,8 @@ main{
         height: 30vh;
         width: 50%;
         max-width: 700px;
-        padding: 35px;
+        padding: 35px 50px;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 59%);
     }    
 }
 
@@ -290,6 +291,12 @@ main{
     }
 }
 
+@media (max-width: 1500px){
+    h1{
+        display: none;
+    }
+}
+
 @media (max-width: 1400px) {
     .pos8{
         visibility: hidden;
@@ -308,8 +315,16 @@ main{
     }   
     
     .text{
-        font-size: 18px;
+        font-size: 25px;
     }
+
+    .intro-text{
+       width: 90%;
+       align-self: center;
+       max-width: unset;
+       padding: auto auto;
+    }
+
 }
 
 @media (max-width: 1050px){
@@ -319,4 +334,88 @@ main{
         height: 0;
         width: 0;
     }    
+
+    .pos5{
+        visibility: hidden;
+        position: absolute;
+        height: 0;
+        width: 0;
+    }
+
+    .info-box{
+        flex-direction: column;
+    }
+
+    .info-box button{
+        background-color: rgba(64, 224, 208, 0.582);
+        color: whitesmoke;
+        margin-top: 10px;
+    }
+
+    .info-img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .info-text{
+        width: 70%;
+        position: absolute;
+        padding: 0;
+        align-self: center;
+    }
+
+    footer .info{
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 900px){
+    header ul{
+        display: none;
+    }
+
+    .nav-buttons{
+        margin-right: 10px;
+        margin-left: auto;
+    }
+
+    .login{
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .text{
+        font-size: 15px;
+    }
+
+    .title{
+        font-size: 35px;
+        line-height: unset;
+    }
+
+    strong{
+        font-size: 35px;
+    }
+    
+    body{
+        height: 200vh;
+    }
+
+    main{
+        height: 180vh;
+    }
+
+    .feat-box{
+        height: 75vh;
+    }
+
+    .most-wanted{
+        flex-wrap: wrap;
+    }
+
+    .intro-text{
+        padding: 5px;
+    }
 }
