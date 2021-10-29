@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../Images/favicon-32x32.png" />
+    <title>Livraria para Todos</title>
+</head>
+<!-- A estruturação foi feita a partir do ensinado na pagina do Mozilla DEV:
+https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure  -->
+<body>
+    <header>
+        <!-- O header ficou em duas DIVs com DisplayFlex, uma com nome e outra com o link de login e cadastro-->
+        <div>
+            <h1 href="#">Livraria para todos</h1>
+            <p>Educação e cultura ao alcance de todos!</p>
+        </div>
+        <div class="login-link">
+            <h4>Olá, seja bem vindo(a)!</h4>
+            <p href="#">Entre ou cadastre-se</p>
+
+        </div>
+    </header>
+
+    <!-- O menu NAV ficou dividido em 2 DIVs, se for deslocado para a lateral tera de sair do NAV e ir para
+    outra classe, ASIDE, segundo recomendações do Mozilla DEvs -->
+    <nav>
+        <ul class="nav-menu">
+            <li href="#">Home</li>
+            <li href="#">Pesquisa</li>
+            <li href="#">Perfil</li>
+            <li href="#">Sobre nós</li>
+        </ul>
+
+
+        <!-- menu-mini-nav-->
+        <ul>
+            <li href="#">Filmes e series</li>
+            <li href="#">Infantis</li>
+            <li href="#">Geek</li>
+            <li href="#">Estudos</li>
+            <li href="#">Religiosos</li>
+            <li href="#">Ficção</li>
+        </ul>
+
+    </nav>
+
+    <main>
+<!-- Dentro no MAIN ficaram a barra de pesquisa, o Resultado de Pesquisa e Os mais procurados 
+    (que receberam uma classe chamada 'suggestions-book')   -->
+        <form>
+            <input type="search" name="q" placeholder="O que você deseja ler?">
+            <div>
+                <input type="submit" value="">
+            </div>
+        </form>
+
+        <section class="search-results">
+            <h2>Resultados da Pesquisa</h2>
+            <!-- Cada imagem e botão receberam o mesmo container para continuarem juntos quando for criado
+            o site responsivo  -->
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEAPredraFilosofal.webp" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+            </div>
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEAsReliquiasDaMorte.jpg" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+            </div>
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEoCaliceDeFogo.webp" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+            </div>
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEOPrisioneiroDeAzkabam.jpg" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+            </div>
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEOEnigmaDoPrinpe.jpg" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+        </section>
+
+
+        <section class="suggestions-book">
+            <h2>Os Mais Procurados</h2>
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEAPredraFilosofal.webp" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+            </div>
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEAsReliquiasDaMorte.jpg" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+            </div>
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEoCaliceDeFogo.webp" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+            </div>
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEOPrisioneiroDeAzkabam.jpg" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+            </div>
+            <div class="imagens-container">
+                <img src="../Images/harryPotterEOEnigmaDoPrinpe.jpg" width="" height="" alt="" id="">
+                <p class="book-name">Harry Potter</p>
+                <p class="author-name">J.K. Rowling</p>
+                <p class='bottom'>TROCAR</p>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>©Copyright 2021 por Grupo 5 da DH. Todos os direitos reservados</footer>
+    <!-- Botão para subir ao topo da página -->
+    <div class="button-up">
+        <img src='../Images/backTop.png' width="" height="" alt="" id="">    
+    </div>
+</body>
+
+</html>
