@@ -12,18 +12,40 @@
 
 <body>
     <header>
-        <img src="../assets/books.ico" alt="">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pesquisa</a></li>
-            <li><a href="#">Perfil</a></li>
-            <li><a href="#">Sobre nos</a></li>
-        </ul>
-        <div class="buttons">
-            <button class="login">login</button>
+        <!-- O header ficou em duas DIVs com DisplayFlex, uma com nome e outra com o link de login e cadastro-->
+        <div>
+            <h1 href="#">Livraria para todos</h1>
+            <p>Educação e cultura ao alcance de todos!</p>
         </div>
+        <div class="login-link">
+            <h4>Olá, seja bem vindo(a)!</h4>
+            <p href="#">Entre ou cadastre-se</p>
 
+        </div>
     </header>
+
+    <!-- O menu NAV ficou dividido em 2 DIVs, se for deslocado para a lateral tera de sair do NAV e ir para
+    outra classe, ASIDE, segundo recomendações do Mozilla DEvs -->
+    <nav>
+        <ul class="nav-menu">
+            <li href="#">Home</li>
+            <li href="#">Pesquisa</li>
+            <li href="#">Perfil</li>
+            <li href="#">Sobre nós</li>
+        </ul>
+
+
+        <!-- menu-mini-nav-->
+        <ul>
+            <li href="#">Filmes e series</li>
+            <li href="#">Infantis</li>
+            <li href="#">Geek</li>
+            <li href="#">Estudos</li>
+            <li href="#">Religiosos</li>
+            <li href="#">Ficção</li>
+        </ul>
+
+    </nav>
     <hr>
     <main>
         <div class="book-box">
@@ -143,19 +165,11 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="socials">
-            <a href="#"><img src="../assets/facebook.ico" alt=""></a>
-            <a href="#"><img src="../assets/twitter.ico"  alt=""></a>
-            <a href="#"><img src="../assets/whatsapp.ico" alt=""></a>
-            <a href="#"><img src="../assets/youtube.ico"  alt=""></a>
-        </div>
-        
-    </footer>
+    <footer>©Copyright 2021 por Grupo 5 da DH. Todos os direitos reservados</footer>
+    <!-- Botão para subir ao topo da página -->
+    <div class="button-up">
+        <img src='../Images/backTop.png' width="" height="" alt="" id="">    
+    </div>
 </body>
    
 </html>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu&display=swap');
-</style>

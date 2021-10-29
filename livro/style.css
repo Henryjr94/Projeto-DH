@@ -1,42 +1,81 @@
-* {
-    box-sizing: border-box;
-}
-html, body{
-    background: rgb(78,226,215);
-    background: linear-gradient(45deg, rgba(78,226,215,1) 0%, rgba(64,109,144,1) 100%);
-    padding: 0;
+*{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     margin: 0;
-    user-select: none; 
+    padding: 0;
 }
+
+
 
 @media screen {
     header{
-        width: 100%; height: 80px;
-        display: flex;
-    }
-    header img{
-        margin: 5px;
-        margin-left: 15px;
+        background-color: #009DAC;
+        color: white;
+        display: flex;    
         justify-content: space-between;
+        height: 120px;  
     }
-    header ul{
+    
+    /* Logo nome */
+    header div h1{
+        font-size: 50px;
+        padding-left: 50px;
+        padding-top: 15px;
+    }
+    
+    /* texto slogan  */
+    header div p{
+    font-size: 15px;
+    padding-left: 130px;
+    }
+    
+    /* Menu login */
+    header .login-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    /* Seja bem vindo */
+    header .login-link h4{
+        font-size: 20px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+    
+    /* texto login */
+    header .login-link p{
+        font-size: 15px;
+        padding-right: 130px;
+        
+    }
+    
+    /*menu de navegação principaç*/
+    nav .nav-menu{
         display: flex;
         flex-direction: row;
-        margin: 0; padding: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        align-items: flex-start;
+        list-style: none;
         justify-content: space-around;
-        width: 70%;
-        list-style-type: none;
+        align-items: center;
+        background-color: #038591;
+        color: white;
+        font-size: 20px;
+        height: 40px; 
+        
     }
     
-    header a{
-        font-size: 25px;
-        text-decoration: none;
-        font-family: 'Ubuntu', sans-serif;
-        color: white;
-    
+    /*menu de navegação secundário tipos de categorias*/
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #ffffff;
+        color: black;
+        font-size: 15px;
+        height: 30px;
+        box-shadow: 0px 10px 13px -7px #000000, 0px 12px 45px -14px rgba(0,0,0,0.62);
     }
     
     .buttons{
@@ -234,25 +273,23 @@ html, body{
 /* footer */
 @media screen {
     footer{
-        position: relative;
-        height: 100px; width: 100%;
-        background-color: rgba(245, 245, 245, 0.308);
+        background: #038591;    
+        color: white;
+        margin-top: 20px;
+        height: 10px;
+        padding: 40px;
+        text-align: center;
+        }
+    
+        .button-up{
         display: flex;
-        justify-content: center;
-    }
-
-    .socials{
-        
-        height: 90%; width: 400px;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 5px;
-        
-    }
-
-    .socials img{
-        height: 100%;        
-    }
+        width: 70px;
+        height: 75px;
+        position:fixed; 
+        top: 580px;
+        left: 1280px;
+            
+        }
 }
 
 @media screen and (max-width: 1200px) {
