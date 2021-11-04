@@ -1,409 +1,203 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-size: 20px;
-    list-style: none;
-    font-family: 'Ubuntu', sans-serif;
     font-weight: unset;
     user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+    
+
 }
 
-body{
-    background: linear-gradient(90deg, rgba(193,193,193,1) 0%, rgba(255,255,255,1) 100%);
-    height: 155vh;
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold; /* texto negrito*/
+
+}
+header {
+    background-color: #009DAC;
+    color: white;
+    display: flex;    
+    justify-content: space-between;
+    height: 120px;
+    cursor: pointer;
+
 }
 
-/* text & buttons setup */
-@media screen {
-    button{
-        border: solid 3px lightseagreen;
-        border-radius: 20px;
-        background:transparent;
-        color:black;
-        text-transform: uppercase;
-        cursor:pointer;
-        transition: .5s;
-    }
-    
-    button:hover{
-        border: solid 3px teal;
-        box-shadow: whitesmoke 0px 0px 7px, whitesmoke 0px 0px 5px;
-        color:gray;
-    }
-    
-    .title{
-        font-family: 'Bebas Neue', cursive;        
-        color:teal;
-        font-weight: bold;        
-        font-size: 70px;
-        text-shadow: black 5px 5px 7px;
-        line-height: 65px;
-    }
-    
-    strong{
-        font-family: 'Bebas Neue', cursive;
-        color: lightseagreen;
-        font-size: 70px;
-    }
-    
-    .text, .feat-title{
-        color: seashell;
-        font-family: 'Ubuntu', sans-serif;
-        text-shadow: black 2px 2px 7px, black 2px 2px 5px;
-    }
-    
-    
+header div h1{
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
 }
 
-/* header */
-@media screen {
+header div p{
+    font-size: 15px;
+    padding-left: 130px;
+ }
 
-    header{
-        display: flex;
-        flex-direction: column;
-        height: 15vh;
-    }
-
-    .main-header{
-        display: flex;
-        height: 12vh;
-        background-color:lightseagreen;
-    }
-
-    #site-name{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 50%;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 0 20px;
-    }
-
-    .login{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .head{
-        text-shadow: unset;
-        line-height: unset;
-        color: whitesmoke;
-        font-size: 60px;
-    }
-
-    header .text{
-        text-shadow: unset;
-        line-height: unset;
-    }
-
-    .login-text{
-        font-size: x-large;
-    }
-    
-    header ul{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center; 
-        background-color:teal;
-    }
-    
-    header a{
-        font-size: 30px;
-        color: whitesmoke;  
-        transition: 0.2s;  
-    }
-}
-
-main{
+ header .login-link{
     display: flex;
     flex-direction: column;
-    height: 130vh;
-    align-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
 
-/* intro-box */
-@media screen {
-    .intro-box{
-        height: 30vh;
-        display: flex;
-    }
+header .login-link h4{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+header .login-link p{
+    font-size: 15px;
+    padding-right: 130px;
     
-    .intro-box img{
-        height: 100%;
+}
+
+/*menu de navegação*/
+
+nav .nav-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #038591;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    cursor: pointer;
+   
+  
+    
+}
+
+
+
+/*menu de navegação tipos de categorias*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+    height: 30px;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 12px 45px -14px rgba(0,0,0,0.62);
+    cursor: pointer;
+   
+
+}
+
+
+
+
+
+
+section {
+    margin-top: 60px;
+    width: 100%;
+    height: 100vh;
+    color:rgb(12, 14, 12);
+    font-weight: bold;
+    
+}
+
+section p{
+    font-size: 50px;
+    text-align: center;
+}
+section h2{
+    text-align: center;
+    
+    margin-top: 25px;
+    
+}
+
+section h5{
+    margin-top: 15px;
+    position: relative;
+    z-index: 100;
+    margin-left: 30px;
+    margin-right: 15px;
+    text-align: justify;
+    line-height: 30px;
+
+    
+    
+ 
+
+    
+}
+
+section #img-text{
+    background-image: url(https://i.pinimg.com/originals/5e/13/d0/5e13d0440c3ca58b5166eb94eb0a4282.png);
+    
+    margin-bottom: 100px;
+    width: 100vw;
+    height: 100vh;
+    float:right;
+}
+
+@media screen {
+    section h5{
+        background: transparent;
+        font-weight: bold;
+        
+        
+    }
+}
+
+@media(max-width: 500px){
+    .menu{
+        flex-direction: column;
         width: 100%;
-        object-fit: cover;
+        font-size: 10px;
     }
-    
-    .intro-text{
-        position: absolute;
-        height: 30vh;
-        width: 50%;
-        max-width: 700px;
-        padding: 35px 50px;
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 59%);
-    }    
-}
-
-/* info-box */
-@media screen {
-    .info-box{
-        display: flex;
-        height: 60vh;
-        width: 98%;
-        max-width: 1800px;
-        padding: 5vh;
-        margin: 0 auto;
-    }
-
-    .info-img{
-        width: 40%;
-    }
-    
-    .info-img img{
-        height: 50vh;
+    .nav-menu{
+        flex-direction: column;
         width: 100%;
-        object-fit: cover;
+        font-size: 10px;
     }
-    
-    .info-text{
-        display: flex;
+    .subtitulo{
         flex-direction: column;
-        width: 50%;
-        padding: 15px 15px 0;
-    }
-    
-    .info-text button{
-        width: 250px;
-        height: 50px;
-        margin-top: auto;
-        border-radius: 25px;
-    }
-
-
-    
-}
-
-/* most-wanted */
-@media screen {
-    .feat-box{
-        display: flex;
-        flex-direction: column;
-        width: 98%;
-        max-width: 1800px;
-        margin: auto;
-        height: 38vh;
-    }
-    
-    .feat-text{
-        height: 7vh;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .most-wanted{
-        display: flex;
-        height: 31vh;
-        justify-content: space-between;
-        margin-top: 10px;    
-    }
-    
-    .most-wanted div{
-        display: flex;
-        flex-direction: column;
-        height: 31vh;
-        justify-content: center;
-    }
-    
-    .most-wanted img{
-        height: 100%;    
-        width: auto;
-        object-fit: contain;
-        box-shadow: black 10px 10px;
-        transition: 1s;
-    }    
-
-    .most-wanted img:hover{
-        box-shadow: gray 10px 10px;
-    }
-
-    .most-wanted a {
-        height: 85%;
-        display: flex;
-        align-content: center;
-        justify-content: center; 
-        width: auto;
-    }
-
-    .feat-title{
-       margin-top: 10px;
-    }    
-}
-
-/* footer */
-@media screen {
-    footer{
-        position: relative;
-        background-color: lightseagreen;
-        display: flex;
-        height: 10vh;
-        padding: 5px;
-    }
-    
-    footer .socials{
-        height: 100%;
-        width: auto;
-    }
-    
-    .socials img{
-        height: 100%;
-    }
-
-    .info{
-        margin-left: 50px;
-        height: 100%;
-        width: 700px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .info ul{
-        display: flex;
-        justify-content: space-between;
-    }
-    .info li{
-        display: inline;
-    }
-
-    .info a, .info a{
-        font-size: 25px;
-        color: black;
-    }
-}
-
-@media (max-width: 1400px) {
-    .pos8{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }    
-}
-
-@media (max-width: 1250px){
-    .pos7{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }   
-    
-    .text{
-        font-size: 25px;
-    }
-
-    .intro-text{
-       width: 90%;
-       align-self: center;
-       max-width: unset;
-       padding: auto auto;
-    }
-
-}
-
-@media (max-width: 1050px){
-    .pos6{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }    
-
-    .pos5{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }
-
-    .info-box{
-        flex-direction: column;
-    }
-
-    .info-box button{
-        background-color: rgba(64, 224, 208, 0.582);
-        color: whitesmoke;
-        margin-top: 10px;
-    }
-
-    .info-img{
-        height: 100%;
         width: 100%;
-    }
-
-    .info-text{
-        width: 70%;
-        position: absolute;
-        padding: 0;
-        align-self: center;
-    }
-
-    footer .info{
-        display: none;
-    }
-
-    .head{
-        font-size: 35px;
-    }
-
-    header .text{
         font-size: 20px;
     }
-
+    .titulo{
+        flex-direction: column;
+        width: 100%;
+        font-size: 20px;
+    }
+    .login-link{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        font-size: 10px;
+    }
     
+
 }
 
-@media (max-width: 900px){
-
-
-    .text{
-        font-size: 15px;
+@media(mix-width: 400px){
+    .menu{
+        font-size: 10px;
+    }
+    .nav-menu{
+        font-size: 10px;
+    }
+    .subtitulo{
+        font-size: 10px;
+    }
+    .titulo{
+        font-size: 10px;
+    }
+    .login-link{
+        font-size: 10px;
     }
 
-    .title{
-        font-size: 35px;
-        line-height: unset;
-    }
-
-    strong{
-        font-size: 35px;
-    }
-    
-    body{
-        height: 200vh;
-    }
-
-    main{
-        height: 180vh;
-    }
-
-    .feat-box{
-        height: 75vh;
-    }
-
-    .most-wanted{
-        flex-wrap: wrap;
-    }
-
-    .intro-text{
-        padding: 5px;
-    }
 }
