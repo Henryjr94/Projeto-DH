@@ -1,0 +1,231 @@
+*{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #009DAC;
+    color: white;
+    display: flex;    
+    justify-content: space-between;
+    height: 120px;  
+}
+
+/* Logo nome */
+header div h1{
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+/* texto slogan  */
+header div p{
+font-size: 15px;
+padding-left: 130px;
+}
+
+/* Menu login */
+header .login-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Seja bem vindo */
+header .login-link h4{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+/* texto login */
+header .login-link p{
+    font-size: 15px;
+    padding-right: 130px;
+    
+}
+
+/*menu de navegação principaç*/
+nav .nav-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #038591;
+    color: white;
+    font-size: 20px;
+    height: 40px; 
+    
+}
+
+/*menu de navegação secundário tipos de categorias*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+    height: 30px;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 12px 45px -14px rgba(0,0,0,0.62);
+}
+
+
+/*barra de pesquisa*/
+main form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* caixa barra de pesquisa */
+main form input{
+    background-color: #EFEFEF;
+    margin-top: 30px;
+    height: 70px;
+    width: 600px;
+    border: none;  
+}
+
+/*botão de pesquisa*/
+main form div input{
+    margin-left: 0px;
+    background-image: url(../Images/search.png);
+    width: 70px;
+    height: 70px;
+    box-shadow: none;
+    cursor: pointer; 
+    transition-duration: 1.0s; 
+}
+/* efeito lupa */
+main form div input:hover {
+box-shadow: -10px 0px 13px -7px #6e6e6e, 10px 0px 13px -7px #6e6e6e, -11px -17px 17px -4px rgba(0,0,0,0.06);
+zoom: 105%;
+
+}
+
+/* Container resultados da pesquisa */
+.search-results{
+display: flex;
+width: 266px;
+}
+
+/* Container resultados da pesquisa (texto) */
+.search-results h2{
+    position: absolute;
+    margin-top: 20px;
+    left: 550px;
+    text-align: center;
+}
+
+
+.search-results .imagens-container img{
+    margin-top: 70px;
+    width: 250px;
+    height: 250px;
+    padding: 8px; 
+}
+
+/* Nome do livro */
+.search-results .imagens-container .book-name{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Nome do autor */
+.search-results .imagens-container .author-name{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* Botão trocar */
+.search-results .imagens-container .bottom{
+    margin-left: 73px; 
+    width: 80px;
+    padding: 20px;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -11px -17px 17px -4px rgba(0,0,0,0.06);
+    transition-duration: 0.7s; 
+    cursor: pointer;
+
+}
+
+/* efeito botao trocar */
+.search-results .imagens-container .bottom:hover{
+    box-shadow: -10px 0px 13px -7px #009DAC, 10px 0px 13px -7px #009DAC, -11px -17px 17px -4px rgba(148, 146, 146, 0.06);
+
+}
+
+/* Container os mais procurados */
+.suggestions-book{
+display: flex;
+width: 266px;
+}
+
+/* Container resultados da pesquisa (texto) */
+.suggestions-book h2{
+    position: absolute;
+    margin-top: 40px;
+    left: 550px;
+    text-align: center;
+}
+
+.suggestions-book .imagens-container img{
+    margin-top: 90px;
+    width: 250px;
+    height: 250px;
+    padding: 8px; 
+}
+
+/* Nome do livro */
+.suggestions-book .imagens-container .book-name{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Nome do autor */
+.suggestions-book .imagens-container .author-name{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Botão trocar */
+.suggestions-book .imagens-container .bottom{
+    margin-left: 73px; 
+    width: 80px;
+    padding: 20px;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -11px -17px 17px -4px rgba(0,0,0,0.06);
+    transition-duration: 0.7s; 
+    cursor: pointer;
+}
+
+/* efeito botao trocar */
+.suggestions-book .imagens-container .bottom:hover{
+    box-shadow: -10px 0px 13px -7px #009DAC, 10px 0px 13px -7px #009DAC, -11px -17px 17px -4px rgba(148, 146, 146, 0.06);
+}
+
+footer{
+    background: #038591;    
+    color: white;
+    margin-top: 20px;
+    height: 10px;
+    padding: 40px;
+    text-align: center;
+    }
+
+    .button-up{
+    display: flex;
+    width: 70px;
+    height: 75px;
+    position:fixed; 
+    top: 580px;
+    left: 1280px;
+        
+    }
