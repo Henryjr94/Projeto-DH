@@ -199,43 +199,59 @@ main{
         flex-direction: column;
         width: 98%;
         max-width: 1800px;
-        margin: auto;
+        margin: 0 auto;
         height: 38vh;
+        justify-content: flex-start;
+        overflow: hidden;
     }
     
     .feat-text{
         height: 7vh;
         display: flex;
-        justify-content: center;
-    }
-    
-    .most-wanted{
-        display: flex;
-        height: 31vh;
         justify-content: space-between;
-        margin-top: 10px;    
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .feat-box button{
+        width: 100px;
+        height: 75%;
     }
     
-    .most-wanted div{
+    #most-wanted{
+        display: flex;
+        height: 31vh;   
+        gap: 20px;
+        overflow-x: scroll; 
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+    }
+    
+    #most-wanted::-webkit-scrollbar{
+        background: transparent;
+    }
+
+    #most-wanted div{
         display: flex;
         flex-direction: column;
         height: 31vh;
-        justify-content: center;
+        min-width: 200px;
+        align-items: center;
+        text-align: center;
     }
     
-    .most-wanted img{
-        height: 100%;    
-        width: auto;
+    #most-wanted img{
+        height: 25vh;
         object-fit: contain;
         box-shadow: black 10px 10px;
         transition: 1s;
     }    
 
-    .most-wanted img:hover{
+    #most-wanted img:hover{
         box-shadow: gray 10px 10px;
     }
 
-    .most-wanted a {
+    #most-wanted a {
         height: 85%;
         display: flex;
         align-content: center;
@@ -244,7 +260,10 @@ main{
     }
 
     .feat-title{
-       margin-top: 10px;
+    width: 100%;
+       text-overflow: ellipsis;
+       overflow:hidden;
+       white-space: nowrap;
     }    
 }
 
@@ -290,22 +309,7 @@ main{
     }
 }
 
-@media (max-width: 1400px) {
-    .pos8{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }    
-}
-
 @media (max-width: 1250px){
-    .pos7{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }   
     
     .text{
         font-size: 25px;
@@ -321,19 +325,6 @@ main{
 }
 
 @media (max-width: 1050px){
-    .pos6{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }    
-
-    .pos5{
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }
 
     .info-box{
         flex-direction: column;
@@ -387,22 +378,7 @@ main{
     strong{
         font-size: 35px;
     }
-    
-    body{
-        height: 200vh;
-    }
 
-    main{
-        height: 180vh;
-    }
-
-    .feat-box{
-        height: 75vh;
-    }
-
-    .most-wanted{
-        flex-wrap: wrap;
-    }
 
     .intro-text{
         padding: 5px;
