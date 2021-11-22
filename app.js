@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var homeRouter = require('./routes/home');
+var homeController = require('./controllers/home');
 var livroRouter = require('./routes/livro');
 var perfilRouter = require('./routes/perfil');
 var searchRouter = require('./routes/search');

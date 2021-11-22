@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var { trazerLivro } = require('../controllers/livro')
+
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('livro', { title: 'Express' });
-});
+router.get('/', trazerLivro);
 
 module.exports = router;

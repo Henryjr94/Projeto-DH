@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/books.ico">
+    <link rel="icon" href="/public/images/books.ico">
     <link rel="stylesheet" href="/stylesheets/home.css">
     <title>Livraria</title>
 </head>
@@ -66,9 +66,9 @@
         <div class="feat-box">
             
             <div class="feat-text">
-                <button id="move-left" onclick="scrollPage()">left</button>
+                <button id="move-left" onclick="scrollPage('left')">left</button>
                 <p class="title">Os mais <strong>procurados</strong></p>
-                <button id="move-right">right</button>
+                <button id="move-right" onclick="scrollPage('left')">right</button>
             </div>
 
             <div id="most-wanted">
@@ -134,3 +134,5 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu&display=swap');
 </style>
+
+<script src="controllers/home.js"></script>
