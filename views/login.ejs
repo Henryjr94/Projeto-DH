@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=""/images/books.ico">
+    <link rel="stylesheet" href="/stylesheets/livro.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <title>Livraria para Todos</title>
+</head>
+
+<body>
+    <header>
+        <!-- O header ficou em duas DIVs com DisplayFlex, uma com nome e outra com o link de login e cadastro-->
+        <div>
+            <h1 href="#">Livraria para todos</h1>
+            <p>Educação e cultura ao alcance de todos!</p>
+        </div>
+        <div class="login-link">
+            <h4>Olá, seja bem vindo(a)!</h4>
+            <p><a href="/login">Entre ou cadastre-se</a></p>
+
+        </div>
+    </header>
+
+    <!-- O menu NAV ficou dividido em 2 DIVs, se for deslocado para a lateral tera de sair do NAV e ir para
+    outra classe, ASIDE, segundo recomendações do Mozilla DEvs -->
+    <nav>
+        <ul class="nav-menu">
+            <li href="#">Home</li>
+            <li href="#">Pesquisa</li>
+            <li href="#">Perfil</li>
+            <li href="#">Sobre nós</li>
+        </ul>
+
+
+        <!-- menu-mini-nav-->
+        <ul>
+            <li href="#">Filmes e series</li>
+            <li href="#">Infantis</li>
+            <li href="#">Geek</li>
+            <li href="#">Estudos</li>
+            <li href="#">Religiosos</li>
+            <li href="#">Ficção</li>
+        </ul>
+
+    </nav>
+    <hr>
+    <main>
+        <div class="formWrapper">
+            <form class="login" action="" method="post">
+                <h3>Fazer login:</h3>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class='formInput'>
+                    <input type="submit" value="Entrar">
+                </div>
+            </form>
+            <form class="signup" action="" method="post">
+                <h3>Cadastre-se:</h3>
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div>
+                    <label for="password">Confirme sua senha:</label>
+                    <input type="password" name="password-confirm" id="password-confirm" required>
+                </div>
+                <div class='formInput'>
+                    <input type="submit" value="Registrar">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>©Copyright 2021 por Grupo 5 da DH. Todos os direitos reservados</footer>
+    <!-- Botão para subir ao topo da página -->
+    <div class="button-up">
+        <img src='"/images/backTop.png' width="" height="" alt="" id="">    
+    </div>
+</body>
+   
+</html>

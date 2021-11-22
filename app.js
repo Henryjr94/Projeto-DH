@@ -9,6 +9,7 @@ var livroRouter = require('./routes/livro');
 var perfilRouter = require('./routes/perfil');
 var searchRouter = require('./routes/search');
 var aboutRouter = require('./routes/about');
+var loginRouter = require('./routes/login');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/livro', livroRouter);
 app.use('/perfil', perfilRouter);
 app.use('/search', searchRouter);
 app.use('/about', aboutRouter);
+app.use('/login', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

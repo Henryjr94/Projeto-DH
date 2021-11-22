@@ -50,6 +50,11 @@
         
     }
     
+    header .login-link p a {
+        text-decoration: none;
+        color: white;
+    }
+
     /*menu de navegação principaç*/
     nav .nav-menu{
         display: flex;
