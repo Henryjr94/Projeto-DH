@@ -1,8 +1,5 @@
-const perfilController = {
-    perfil : (req, res) => {
-        res.render('perfil')
-    }
+function perfilController(req, res, next) {
+  res.render('perfil');
 }
-module.exports = {
-    const perfilController = {
-}
+
+module.exports = perfilController
