@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: unset;
+    user-select: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold; /* texto negrito*/
+
+}
+header {
+    background-color: #009DAC;
+    color: white;
+    display: flex;    
+    justify-content: space-between;
+    height: 120px;
+    cursor: pointer;
+
+}
+
+header div h1{
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+header div p{
+    font-size: 15px;
+    padding-left: 130px;
+ }
+
+ header .login-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+header .login-link h4{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+header .login-link p{
+    font-size: 15px;
+    padding-right: 130px;
+    
+}
+
+/*menu de navegação*/
+
+nav .nav-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #038591;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    cursor: pointer;
+   
+  
+    
+}
+
+
+
+/*menu de navegação tipos de categorias*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+    height: 30px;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 12px 45px -14px rgba(0,0,0,0.62);
+    cursor: pointer;
+   
+
+}
+
+
+
+
+
+
+section {
+    background-color:blanchedalmond;
+    margin-top: 0;
+    width: 100%;
+    height: 100vh;
+    color:rgb(15, 15, 15);
+    
+    text-overflow: ellipsis;
+    text-shadow: rgba(221, 201, 201, 0.616) 5px 5px 7px;
+    z-index: 25
+    
+}
+
+section p{
+    margin-top: 17px;
+    font-size: 50px;
+    text-align: center;
+}
+section h2{
+    text-align: center;
+    
+    margin-top: 25px;
+    
+}
+
+section h5{
+    margin-top: 15px;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+    margin-left: 30px;
+    margin-right: 35px;
+    text-align: justify;
+    line-height: 30px;
+    
+
+    
+    
+ 
+
+    
+}
+
+/*section #img-text{
+    background-image: url(https://i.pinimg.com/originals/5e/13/d0/5e13d0440c3ca58b5166eb94eb0a4282.png);
+    background-size: cover;
+    margin-bottom: 50px;
+    width: 100vw;
+    height: 100vh;
+    float:right;
+    
+}*/
+
+nav .img-baixo{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 20px;
+
+}
+nav .img-baixo p{
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+/* .img-baixo img{
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    
+}
+.img-1{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    
+} */
+
+/* nav .img-1 h5{
+    flex-direction:column;
+    text-align: end;
+    color: #009DAC;
+    
+} */
+
+
+footer{
+    background: linear-gradient(#038591, #7e86dd);    
+    color: white;
+    margin-top: 100px;
+    height: 10px;
+    padding: 40px;
+    text-align: center;
+    }
+
+    .button-up{
+    display: flex;
+    width: 40px;
+    height: 45px;
+    position:fixed; 
+    top: 600px;
+    left: 1280px;
+    
+       
+        
+    }
+
+
+@media screen {
+    section h5{
+        background: transparent;
+        font-weight: bold;
+        
+        
+    }
+}
+
+@media(max-width: 500px){
+    .menu{
+        flex-direction: column;
+        width: 100%;
+        font-size: 10px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        width: 100%;
+        font-size: 10px;
+    }
+    .subtitulo{
+        flex-direction: column;
+        width: 100%;
+        font-size: 20px;
+    }
+    .titulo{
+        flex-direction: column;
+        width: 100%;
+        font-size: 20px;
+    }
+    .login-link{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        font-size: 10px;
+    }
+    
+
+}
+
+@media(mix-width: 400px){
+    .menu{
+        font-size: 10px;
+    }
+    .nav-menu{
+        font-size: 10px;
+    }
+    .subtitulo{
+        font-size: 10px;
+    }
+    .titulo{
+        font-size: 10px;
+    }
+    .login-link{
+        font-size: 10px;
+    }
+
+}
