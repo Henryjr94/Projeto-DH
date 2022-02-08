@@ -2,7 +2,7 @@ var express = require('express');
 const sobreNosController = require('../controllers/sobreNos');
 var router = express.Router();
 
-/* PERFIL. */
+/* Sobre Nós. */
 router.get('/', sobreNosController );
 
 module.exports = router
