@@ -6,36 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/public/images/books.ico">
+    <link rel="stylesheet" href="/stylesheets/setup.css">
     <link rel="stylesheet" href="/stylesheets/home.css">
     <title>Livraria</title>
 </head>
 
 <body>
-    <header>
+ 
+    <%- include("./partials/header") %>
 
-        <div class="main-header">
-            <div id="site-name">
-                <h1><p class="head"> Livraria de todos </p></h1>                
-                <p class="text"> educacao e cultura ao alcance de todos</p>
-            </div>
-
-            <div class="login">
-                <p class="text login-text">Ola, seja bem vindo(a)!</p>
-                <p class="text"><a href="/login">Entre ou cadastre-se</a></p>
-            </div>
-            
-
-        </div>
-        
-
-        <ul id="nav-sticky">
-            <li><a href="#">Home</a></li>
-            <li><a href="/search">Pesquisa</a></li>
-            <li><a href="/perfil">Perfil</a></li>
-            <li><a href="/about">Sobre nós</a></li>
-        </ul>   
-
-    </header>
     <main>
         <div class="intro-box">
             <img src="/images/book-stand.jpg" alt="">
@@ -107,26 +86,9 @@
             </div>
         </div>
     </main>
-    <footer>
+    
+    <%- include("./partials/footer") %>
 
-        <div class="socials">
-            <a href="#"><img src="/images/facebook.ico" alt=""></a>
-            <a href="#"><img src="/images/twitter.ico"  alt=""></a>
-            <a href="#"><img src="/images/whatsapp.ico" alt=""></a>
-            <a href="#"><img src="/images/youtube.ico"  alt=""></a>
-        </div>
-
-        <div class="info">
-            <p>INFORMACOES</p>
-            <ul class="info-list">
-                <li><a href="#">Dicas</a></li>
-                <li><a href="#">Duvidas Frequentes</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-            </ul>
-        </div>      
-
-    </footer>
 </body>
    
 </html>
