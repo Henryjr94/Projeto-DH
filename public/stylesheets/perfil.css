@@ -1,67 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-}
 
-/*Header */
-
-.topo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #009dac;
-  height: 120px;
-  padding: 0px 50px;
-  color: #fff;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo h1 {
-  font-size: 50px;
-}
-
-.logo p {
-  font-size: 15px;
-}
-
-.login-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.login-link h4 {
-  font-size: 20px;
-}
-.login-link a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 15px;
-}
-
-.login-link a:hover {
-  text-decoration: underline;
-}
-
-nav {
-  background-color: #038591;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 20px;
-  height: 40px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
 
 /*MAIN*/
 
@@ -158,13 +95,4 @@ main h2 {
 .book_box button:hover {
   box-shadow: -10px 0px 13px -7px #009dac, 10px 0px 13px -7px #009dac,
     -11px -17px 17px -4px rgba(148, 146, 146, 0.06);
-}
-
-footer {
-  background-color: #038591;
-  color: #fff;
-  margin-top: 20px;
-  height: 10px;
-  padding: 40px;
-  text-align: center;
 }

@@ -4,37 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel='stylesheet' href='/stylesheets/perfil.css' />
-    <title>Livraria de Todos</title>
+    <link rel="stylesheet" href="/stylesheets/setup.css" />
+    <link rel='stylesheet' href="/stylesheets/perfil.css" />
+    <title>Livraria</title>
   </head>
 
   <body>
-    <header>
-      <section class="topo">
-        <section class="logo">
-          <h1><a href="/">Livraria de Todos</a></h1>
-          <p>Educação e cultura ao alcance de todos!</p>
-        </section>
-        <section class="login-link">
-          <h4>Olá, seja bem vindo(a)!</h4>
-          <a href="/login">Entre ou Cadastre-se</a>
-        </section>
-      </section>
-
-      <nav>
-        <a href="/">Home</a>
-        <a href="/search">Pesquisa</a>
-        <a href="/perfil">Perfil</a>
-        <a href="/about">Sobre nós</a>
-      </nav>
-    </header>
+    <%- include("./partials/header") %>
 
     <main>
       <section class="main">
         <h2>Meu Perfil</h2>
         <section class="box">
           <div class="foto_perfil">
-            <img src="/images/inuyasha.jpg" alt="Foto de Perfil" />
+            <img src="/images/perfil.png" alt="Foto de Perfil" />
           </div>
           <div class="info">
             <h3>João Silva</h3>
@@ -177,8 +160,6 @@
       </section>
     </main>
 
-    <footer>
-      <p>© Copyright 2021 por Grupo 5 da DH. Todos os direitos reservados</p>
-    </footer>
+    <%- include("./partials/footer") %>
   </body>
 </html>
