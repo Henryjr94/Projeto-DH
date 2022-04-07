@@ -1,0 +1,52 @@
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.signup img{
+    height: 100%;
+    width: 50%;
+    object-fit: contain ;
+}
+
+.signup #form-box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: var(--color-5);
+    gap: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.signup #user-data{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signup h2{
+    font-size: xx-large;
+    text-justify: unset;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px var(--color-1) solid;
+}
+
+.signup #cadastro{
+    border: 2px solid var(--color-1);
+    font-family: var(--font-5);
+}

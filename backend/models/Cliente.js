@@ -17,9 +17,13 @@ const Cliente = database.define('cliente', {
 
     email: {
         type: Sequelize.STRING,
-        allowNull: true
-    }
+        allowNull: false
+    },
 
+    senha: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    }
 }, 
 {
     timeStamps: false,

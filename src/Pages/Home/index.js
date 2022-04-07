@@ -6,7 +6,7 @@ import infoBox from "../../images/open-book.jpg"
 //
 function Home() {
     return (
-        <main id="home">
+        <main className="home">
             <div className="intro-box">
                 <img src={introImg} alt=""/>
 
@@ -38,7 +38,7 @@ function Home() {
                         <p className="home-text">Troque livros e compartilhe a experiencia que teve com
                             outros, Livros na estante nunca mais!</p>
                     </div>
-                    <button id="more-info">mais informacoes</button>
+                    <button id="more-info">Mais informações</button>
                 </div>
 
             </div>

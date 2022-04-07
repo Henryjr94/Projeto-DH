@@ -2,19 +2,20 @@ import Setup from './Pages/Header'
 import Routes from './routes'
 import { createContext, useState } from 'react'
 
-export const Usuario = createContext()
+export const DadosGlobais = createContext()
 
 function App() {
-  let [usuario, setUsuario] = useState({
+  let [dados, setDados] = useState({
     nome: "Joao",
-    email: "joao@oi.com"
+    email: "joao@oi.com",
+    livroBusca: ""
   })
   return (
-    <Usuario.Provider value={[usuario, setUsuario]}>
+    <DadosGlobais.Provider value={[dados, setDados]}>
 
       <Routes />
     
-    </Usuario.Provider>      
+    </DadosGlobais.Provider>      
   );
 }
 

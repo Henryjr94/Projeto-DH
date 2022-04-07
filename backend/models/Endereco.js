@@ -7,22 +7,20 @@ const Endereco = database.define('endereco', {
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
-    },
-
-    bairro: {
-        type: Sequelize.STRING,       
-        allowNull: false
-    },
-
-    cidade: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-
+    },    
     estado: {
         type: Sequelize.STRING,
         allowNull: false
     },
+    cidade: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    bairro: {
+        type: Sequelize.STRING,       
+        allowNull: false
+    },
+    
 }, 
 {
     timeStamps: false,

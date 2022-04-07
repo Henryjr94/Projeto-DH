@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Beau+Rivage&family=Bebas+Neue&family=Fjalla+One&family=Lato:wght@300&family=Varela+Round&family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@300&family=Beau+Rivage&family=Bebas+Neue&family=Fjalla+One&family=Lato:wght@300&family=Varela+Round&family=Grape+Nuts&display=swap');
 
 * {
   margin: 0;
@@ -9,18 +9,29 @@
   font-size: unset;
   font-weight: unset;
   user-select: none;
+  color: unset;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
 
+button{
+  cursor: pointer;
+}
+
 :root {
-  --color-1: #212121;
-  --color-2: #323232;
-  --color-3: #0D7377;
-  --color-4: #20b2aa;
-  --font-1: 'Grape Nuts', cursive;;
-  --font-2: 'Beau Rivage', cursive;
+  --color-1: #184E77;
+  --color-2: #1E6091;
+  --color-3: #1A759F;
+  --color-4: #168AAD;
+  --color-5: #34A0A4;
+  --color-6: #52B69A;
+  --color-7: #76C893;
+  --color-8: #99D98C;
+  --color-9: #B5E48C;
+  --color-10: #D9ED92;
+  --font-1: 'Grape Nuts', cursive;
+  --font-2: 'Roboto', sans-serif;
   --font-3: 'Bebas Neue', cursive;
   --font-4: 'Fjalla One', sans-serif;
   --font-5: 'Lato', sans-serif;
@@ -33,7 +44,7 @@ body {
   background: linear-gradient(90deg, rgba(193,193,193,1) 0%, rgba(255,255,255,1) 100%);
 }
 
-button{
+/* button{
   background-color: transparent;
   border: 2px solid var(--color-3);
   font-weight: bolder;
@@ -41,7 +52,7 @@ button{
   border-radius: 5px;
   font-family: var(--font-6);
   cursor: pointer;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
