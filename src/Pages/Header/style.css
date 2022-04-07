@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: unset;
+    font-weight: unset;
+    user-select: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+      color:  unset;
+  }
+
+/* Setup */
+@media screen {
+    
+    header button, #login-sub, .sub-btn{
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-family: var(--font-6);
+        cursor: pointer;
+    }
+    
+    header button:hover{
+        box-shadow: 0px 0px 2px var(--color-1);
+    }
+    
+    header h1{
+        font-weight: bolder;
+        font-size: xxx-large;
+        font-family: var(--font-1);
+        color: white;
+    }
+        
+    #header-main{
+        display: flex;
+        height: 10vh;
+        background-color: var(--color-4);
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+  
+/* Desktop */
+@media screen {
+    #head-right{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+    #head-right button{
+        width: 50%;
+        align-self: flex-end;
+    }
+    
+    #search-form{
+        display: flex;
+        gap: 2px;
+    }
+    
+    #search-btn{
+        height: 30px;
+        border: 1px solid black;
+    }
+    
+    #login-box{
+        position: fixed;
+        display: flex;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: 300px;
+        width: 250px;
+        background-color: var(--color-3);
+        right: 10px;
+        top: 10px;
+        font-size: large;
+        font-weight: bold;
+        z-index: 10;
+        color: white;
+    }
+
+    #login-top{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #login-top p{
+        font-size: x-large;
+    }
+    
+    #login-box button{
+        height: 25px;
+        width: 25px;
+        border-radius: 12.5px;
+        align-self: flex-end;
+        color: white;
+        border: black 1px solid;
+    }
+    
+    #login-form{
+        margin: 25px;   
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        justify-content: flex-start;
+    }
+    
+    #login-sub{
+        width: 100px;
+        font-weight: bold;
+    }
+    
+    header list{
+        display: flex;
+        justify-content: space-around;
+        font-size: x-large;
+        background-color: var(--color-2);
+        color: white;
+    }
+    
+    header ul{
+        cursor: pointer;
+        font-family: var(--font-4);    
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+
+    #head-right{
+       /* display: none; */
+    }
+    
+    header h1{
+        font-size: x-large;
+    }
+}

@@ -1,0 +1,125 @@
+/* text & buttons setup */
+@media screen {
+
+    .home-title{
+        font-family: var(--font-4);        
+        color:var(--color-3);
+        font-weight: bold;        
+        font-size: xxx-large;
+        text-shadow: black 5px 5px 7px;
+    }
+    
+    .home-strong{
+        font-family: var(--font-4);
+        color: var(--color-4);
+        font-size: xxx-large;
+    }
+    
+    .home-text, .feat-title{
+        color: seashell;
+        font-family: var(--font-6);
+        text-shadow: black 2px 2px 7px, black 2px 2px 5px;
+    }    
+
+    #home{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 10px;
+        font-size: large;
+    }
+}
+
+/* intro-box */
+@media screen {
+
+    .intro-box{
+        height: 30vh;
+        display: flex;
+    }
+    
+    .intro-box img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .intro-text{
+        padding: 5px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 30vh;
+        width: 100%;
+        max-width: 700px;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 59%);
+    }    
+}
+
+/* info-box */
+@media screen {
+    .info-box{
+        display: flex;
+        justify-content: space-around;
+        height: 60vh;
+        width: 100%;
+        gap: 20px;
+        max-width: 1800px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .info-img{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    
+    .info-img img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 50%;
+    }
+    
+    .info-text button{
+        width: 250px;
+        height: 50px;        
+        border-radius: 25px;
+    }
+    
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    .title{
+        font-size: xx-large;
+    }
+
+    .home-strong{
+        font-size: xx-large;
+    }
+
+    #main{
+        font-size: medium;
+    }
+
+    .info-img{
+        display: none;
+    }
+
+    .info-text{
+        width: 100%;
+    }
+
+    .info-box{
+        height: 30vh;
+    }
+}

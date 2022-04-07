@@ -1,0 +1,94 @@
+
+/*MAIN*/
+
+h2{
+    font-size: large;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.box {
+    display: flex;
+    width: 80%;
+    margin: auto auto 50px;
+}
+.foto_perfil {
+    width: 20%;
+}
+
+.foto_perfil img {
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    margin-right: 20px;
+}
+
+.info {
+    margin: 10px;
+    padding: 10px 0 0 30px;
+    text-align: justify;
+    width: 40%;
+}
+
+.info h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.info p {
+    font-size: 15;
+    padding-bottom: 3px;
+}
+
+.info button {
+    box-shadow: -10px 0 13px -7px #000000, 10px 0 13px -7px #000000, -11px -17px 17px -4px rgba(0, 0, 0, 0.06);
+    transition-duration: 0.7s;
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info button:hover {
+    box-shadow: -10px 0 13px -7px #009dac, 10px 0 13px -7px #009dac, -11px -17px 17px -4px rgba(148, 146, 146, 0.06);
+}
+
+.box_troca {
+    margin-top: 20px;
+    width: 60%;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.book_box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+}
+
+.book_box p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.book_box button {
+    padding: 20px;
+    box-shadow: -10px 0 13px -7px #000000, 10px 0 13px -7px #000000, -11px -17px 17px -4px rgba(0, 0, 0, 0.06);
+    transition-duration: 0.7s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.book_box button:hover {
+    box-shadow: -10px 0 13px -7px #009dac, 10px 0 13px -7px #009dac, -11px -17px 17px -4px rgba(148, 146, 146, 0.06);
+}

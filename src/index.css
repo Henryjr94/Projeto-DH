@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Beau+Rivage&family=Bebas+Neue&family=Fjalla+One&family=Lato:wght@300&family=Varela+Round&family=Grape+Nuts&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: unset;
+  font-weight: unset;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+:root {
+  --color-1: #212121;
+  --color-2: #323232;
+  --color-3: #0D7377;
+  --color-4: #20b2aa;
+  --font-1: 'Grape Nuts', cursive;;
+  --font-2: 'Beau Rivage', cursive;
+  --font-3: 'Bebas Neue', cursive;
+  --font-4: 'Fjalla One', sans-serif;
+  --font-5: 'Lato', sans-serif;
+  --font-6: 'Varela Round', sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(90deg, rgba(193,193,193,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+button{
+  background-color: transparent;
+  border: 2px solid var(--color-3);
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: var(--font-6);
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*:focus {
+  outline: none;
+}
