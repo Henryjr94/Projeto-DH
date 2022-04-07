@@ -5,6 +5,10 @@
 **/node_modules
 /.pnp
 .pnp.js
+/README.md
+
+# /backend/.gitignore
+/node_modules
 
 # testing
 /coverage
