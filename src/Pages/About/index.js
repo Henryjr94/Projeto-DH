@@ -1,49 +1,37 @@
-// import './style.css'
+ import './style.css'
 
 function About() {
     return (
-        <section>
+        <section className='todos'>
             <div id="img-text">
-                <p>Sobre Nós</p>
-                <h2>Quem Nós Somos</h2>
+                <div className='titulo'>
+                <p>Quem Somos</p>
+                <h2>Somos o Grupo 5 do curso de programação Full Stack 2021/22 da Digital House,
+                     este é nosso Projeto Integrador Troca Livros</h2>
+                </div>
+            <div className='container'>
+                <h5 className='text1'>
+                Talvez a nossa história lhe soe familiar. Adoramos livros, mas assim, MUITO! Virar as páginas, sentir a textura do papel, olhar de pertinho os detalhes de capa... Ah, não tem nada igual.
 
-                <h5>
-                    A partir de 2014 fora de nossa oficina familiar em Como, Itália; nós nos
-                    associamos com 8 companheiros artigiani ou artesãos italianos , todos muito
-                    ansiosos para mostrar sua herança artesanal e designs essenciais. (leia mais em
-                    Nossos artesãos ) De pontas com bainhas à mão a ombros costurados à mão, nossos
-                    artesãos criam todas as roupas e acessórios da 40 Colori de acordo com os mais
-                    altos padrões de qualidade para criar peças de uso diário para uma elegância
-                    casual atemporal. Para que isso aconteça, fornecemos a eles a tela para se
-                    transformarem em sua próxima criação. Viajamos pela Itália, visitando fábricas e
-                    comerciantes para encontrar os melhores tecidos e fios, garantindo que sejam
-                    naturais, coloridos e de origem responsável. (leia mais em Nossos Materiais )
+                Biografia? Devoramos. Trilogia? Vem! Best Seller ou aquele livro que ninguém quer comprar porque a capa não é tão charmosa assim? Queremos!
+
+                Pode ser um conto cheio de romance mimi ou um suspense de arrepiar o cabelo. Até gibi velho tem seu charme, não acha?. Nós não fazemos cerimônia com ninguém, somos bons de livro.
                 </h5>
 
-                <h2>
-                    Como Trabalhamos
-                </h2>
+                <h5 className='text2'>
+                Mas aí começou o sofrimento: na estante não cabe mais nem pensamento e um livro novo custa os olhos da cara. Então pensamos, por que não compartilhar os livros que já foram lidos? E assim surgiu nosso projeto.
 
-                <h5>
-                    Optamos por um modelo de distribuição direto ao artesão focado em serviços sob
-                    medida e customizados para garantir que produzamos o máximo possível o que é
-                    necessário exatamente como o cliente final precisa, com menos compromissos e
-                    desperdício de recursos. Tudo com preços honestos, porque uma compra mais
-                    significativa não deve ser um luxo. (leia mais em Nossa Abordagem e Qualidade
-                    Ética ) Compre agora nossa coleção básica de designs atemporais que realmente
-                    amamos. Nossa coleção básica raramente está disponível imediatamente e sempre
-                    disponível sob demanda. Qualquer coisa que não estiver em estoque, você pode
-                    fazer sob encomenda e nossos artesãos irão fabricar qualquer tamanho ou estilo
-                    esgotado exclusivamente para você em 3-6 semanas. (leia mais em Feito sob
-                    encomenda ) Se você está se sentindo criativo ou não consegue encontrar o estilo
-                    ou ajuste que procura, nossa oferta personalizada é a resposta. Com nossos
-                    serviços Custom Made e Made to Measure, você pode customizar nossos designs e
-                    fazer com que nossos artesãos elaborem cada peça ou acessório exatamente como
-                    você deseja, com sua perfeição, sem comprometer o estilo ou o caimento!
-                    Visite-nos em nossa loja Bloomsbury para desfrutar da experiência completa de 40
-                    Colori! Como alternativa, reserve uma consulta online para começar seu projeto
-                    personalizado. (leia mais em Custom Made ) (leia mais em Made to Measure )
+                O Troca de Livros incentiva o consumo sustentável, promove a troca colaborativa entre leitores de todo o Brasilsão e de quebra mantém sua biblioteca sempre atualizada. Ah, tudo isso sem gastar fortunas, nem sair de casa, melzinho na chupeta, hein? haha
+
+                Se identificou? Vem jogar com a gente ;)
                 </h5>
+                <br>
+                </br>
+                
+
+            </div>            
+            <h1>Projeto desenvolvido por(Henry Okamura, Diego Castro, Danilo Wellington, Andreia Macedo, Adriano Machado)</h1>
+            
 
             </div>
 
