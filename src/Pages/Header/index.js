@@ -7,6 +7,7 @@ function Intro() {
     var [loginStyle, setLoginStyle] = useState('hidden')
     const [dados, setDados] = useContext(DadosGlobais)
 
+    console.log(dados);
     return (
         <header>
             <div id="header-main">

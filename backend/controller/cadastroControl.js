@@ -1,6 +1,6 @@
 const database = require('../database/index')
-const Cliente = require('../models/Cliente')
 const Endereco = require('../models/endereco')
+const Cliente = require('../models/Cliente')
 const Livro = require('../models/livro')
 const Troca = require('../models/troca')
 

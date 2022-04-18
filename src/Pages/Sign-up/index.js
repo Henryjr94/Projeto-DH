@@ -1,6 +1,20 @@
 import './style.css'
 import form from '../../images/form.webp'
 import { useEffect, useState } from 'react'
+import axios from "axios"
+let clinteTitulo
+
+// function efetuarCadastro () {
+
+
+// }
+
+// axios.all([
+//     axios.post("`http://localhost:3000/cadastro/cliente").then(
+
+//     )
+// ])
+
 
 function SignUp () {
     let [dadosCadastro, setDadosCadastro] = useState({nome:"",email:"",estado:"",cidade:"",bairro:"",senha:""})

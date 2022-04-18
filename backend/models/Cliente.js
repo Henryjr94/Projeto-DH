@@ -21,7 +21,7 @@ const Cliente = database.define('cliente', {
     },
 
     senha: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false
     }
 }, 

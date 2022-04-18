@@ -7,7 +7,7 @@ const Troca = require('../models/troca')
 const control = {
     listCliente: async (req, res) => {
 
-        // database.sync()
+        // await database.sync()
 
         const clienteLista = await Cliente.findAll()
 
