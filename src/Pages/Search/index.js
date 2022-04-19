@@ -1,6 +1,7 @@
 import "./style.css"
 import bookPlaceholder from "../../images/bookPlaceholder.jpg"
 
+
 function Search () {
     return (
         <main className="search-container">
@@ -47,6 +48,7 @@ function Search () {
                 <p className="author-name">J.K. Rowling</p>
                 <p className="bottom">TROCAR</p>
             </div>
+            
         </section>
 
 
