@@ -1,4 +1,4 @@
-// import "./style.css"
+import "./style.css"
 import bookPlaceholder from "../../images/bookPlaceholder.jpg"
 
 function Search () {
