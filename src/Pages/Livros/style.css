@@ -1,0 +1,93 @@
+.profile h2 {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.profile_box {
+  display: flex;
+  /* width: 80%; */
+  margin: auto ;
+  justify-content: center;
+}
+.profile_foto {
+  width: 20%;
+}
+
+.profile_foto img {
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  margin-right: 20px;
+}
+
+.profile_info {
+  margin: 10px;
+  padding: 10px 0 0 30px;
+  text-align: justify;
+  width: 40%;
+}
+
+.profile_info h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.profile_info p {
+  font-size: 15;
+  padding-bottom: 3px;
+}
+
+.profile_info button {
+  box-shadow: -10px 0 13px -7px #000000, 10px 0 13px -7px #000000, -11px -17px 17px -4px rgba(0, 0, 0, 0.06);
+  transition-duration: 0.7s;
+  padding: 10px;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.profile_info button:hover {
+  box-shadow: -10px 0 13px -7px #009dac, 10px 0 13px -7px #009dac, -11px -17px 17px -4px rgba(148, 146, 146, 0.06);
+}
+
+.profile_box_troca {
+  margin-top: 20px;
+  width: 60%;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.profile_books {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.profile_book_box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
+  width: 15%;
+}
+
+.profile_book_box > p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.profile_book_box > button {
+  padding: 5px 1px;
+  box-shadow: -10px 0 13px -7px #000000, 10px 0 13px -7px #000000, -11px -17px 17px -4px rgba(0, 0, 0, 0.06);
+  transition-duration: 0.7s;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.profile_book_box > button:hover {
+  box-shadow: -10px 0 13px -7px #009dac, 10px 0 13px -7px #009dac, -11px -17px 17px -4px rgba(148, 146, 146, 0.06);
+}
